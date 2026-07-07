@@ -58,7 +58,6 @@ export default function Footer() {
   const router   = useRouter();
   const pathname = usePathname();
   const isHome   = pathname === "/";
-  const year     = new Date().getFullYear();
 
   const handleClick = (link: FooterLink) => {
     if (link.type === "anchor") {
@@ -204,7 +203,16 @@ export default function Footer() {
 
         <div style={{ display: "flex", flexWrap: "wrap", alignItems: "center", justifyContent: "space-between", gap: "0.75rem" }}>
           <p style={{ fontFamily: "var(--font-inter), sans-serif", fontSize: "0.75rem", color: "rgba(248,235,235,0.3)" }}>
-            {"© "}{year} JL Samuray BJJ Academy, desarrollado por devnova. Todos los derechos reservados.
+            {"2026 - Launched into orbit by "}
+            <a
+              href="https://devnova.com.ar"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: "inherit", textDecoration: "underline" }}
+            >
+              DevNova
+            </a>
+            {" © All rights reserved."}
           </p>
           <p style={{ fontFamily: "var(--font-oswald), sans-serif", fontWeight: 600, fontSize: "0.75rem", letterSpacing: "0.16em", color: "rgba(248,113,113,0.55)", textTransform: "uppercase" }}>
             {"Sé fuerte · Sé parte · OSS"}
