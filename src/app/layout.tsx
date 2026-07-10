@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Oswald } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 
 const inter = Inter({
@@ -108,6 +109,18 @@ export default function RootLayout({
         className="min-h-screen antialiased"
         style={{ backgroundColor: "#0a0a0a", color: "#F5F5F5", fontFamily: "var(--font-inter), system-ui, sans-serif" }}
       >
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-KJJC0RWJ0V"
+          strategy="afterInteractive"
+        />
+        <Script id="ga4-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-KJJC0RWJ0V');
+          `}
+        </Script>
         {children}
       </body>
     </html>
