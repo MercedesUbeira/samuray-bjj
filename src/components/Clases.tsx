@@ -8,7 +8,7 @@ const BRANCHES = [
     key: "central",
     label: "Academia",
     name: "Central",
-    profesor: undefined as string | undefined,
+    profesor: "Prof. Jorge Omar Ledesma",
     address: "Av.Rivadavia 5040 (galería Cavour 2do piso), Caballito",
     addressExtra: undefined as string | undefined,
     mapsUrl: "https://maps.google.com/?q=Av.+Rivadavia+5040,+Caballito,+Buenos+Aires",
