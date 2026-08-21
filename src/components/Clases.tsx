@@ -8,6 +8,7 @@ const BRANCHES = [
     key: "central",
     label: "Academia",
     name: "Central",
+    profesor: undefined as string | undefined,
     address: "Av.Rivadavia 5040 (galería Cavour 2do piso), Caballito",
     addressExtra: undefined as string | undefined,
     mapsUrl: "https://maps.google.com/?q=Av.+Rivadavia+5040,+Caballito,+Buenos+Aires",
@@ -21,12 +22,13 @@ const BRANCHES = [
     key: "filial-1",
     label: "Filial 1",
     name: "Balvanera",
+    profesor: "Prof. Guilherme Mello",
     address: "Av.Rivadavia 2283,",
     addressExtra: "Balvanera",
     mapsUrl: "https://maps.google.com/?q=Av.+Rivadavia+2283,+Balvanera,+Buenos+Aires",
     schedule: [
-      { key: "filial-1-martes", label: "Martes", abrev: "MAR", hora: "18:30", fin: "20:00" },
-      { key: "filial-1-jueves", label: "Jueves", abrev: "JUE", hora: "18:30", fin: "20:00" },
+      { key: "filial-1-martes", label: "Martes", abrev: "MAR", hora: "20:00", fin: "21:30" },
+      { key: "filial-1-jueves", label: "Jueves", abrev: "JUE", hora: "20:00", fin: "21:30" },
     ],
   },
 ];
@@ -105,6 +107,11 @@ export default function Clases() {
                       {branch.name}
                     </h3>
                   </a>
+                  {branch.profesor && (
+                    <span style={{ fontFamily: "var(--font-inter), sans-serif", fontSize: "0.8125rem", color: "#6B6460", display: "block", marginTop: "0.375rem" }}>
+                      {branch.profesor}
+                    </span>
+                  )}
                 </div>
                 <div style={{ background: "rgba(139,26,26,0.07)", border: "1px solid rgba(139,26,26,0.15)", borderRadius: "999px", padding: "0.45rem 0.75rem", flexShrink: 0 }}>
                   <span style={{ fontFamily: "var(--font-inter), sans-serif", fontSize: "0.6875rem", fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", color: "#8B1A1A" }}>

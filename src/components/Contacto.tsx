@@ -40,6 +40,7 @@ const BRANCHES = [
   {
     key: "central",
     name: "Central",
+    profesor: undefined as string | undefined,
     address: "Av. Rivadavia 5040",
     neighborhood: "Caballito",
     mapsUrl: "https://maps.google.com/?q=Av.+Rivadavia+5040,+Caballito,+Buenos+Aires",
@@ -52,12 +53,13 @@ const BRANCHES = [
   {
     key: "filial-1",
     name: "Balvanera",
+    profesor: "Prof. Guilherme Mello",
     address: "Av. Rivadavia 2283",
     neighborhood: "Balvanera",
     mapsUrl: "https://maps.google.com/?q=Av.+Rivadavia+2283,+Balvanera,+Buenos+Aires",
     schedule: [
-      { key: "filial-1-martes", day: "Martes", time: "18:30 - 20:00" },
-      { key: "filial-1-jueves", day: "Jueves", time: "18:30 - 20:00" },
+      { key: "filial-1-martes", day: "Martes", time: "20:00 - 21:30" },
+      { key: "filial-1-jueves", day: "Jueves", time: "20:00 - 21:30" },
     ],
   },
 ];
@@ -261,6 +263,11 @@ export default function Contacto() {
                     <div style={{ fontFamily: "var(--font-oswald), sans-serif", fontWeight: 700, fontSize: "1.0625rem", textTransform: "uppercase", color: "#1A1615", letterSpacing: "0.04em", lineHeight: 1, marginBottom: "0.375rem" }}>
                       {branch.name}
                     </div>
+                    {branch.profesor && (
+                      <div style={{ fontFamily: "var(--font-inter), sans-serif", fontSize: "0.75rem", color: "#6B6460", marginBottom: "0.5rem" }}>
+                        {branch.profesor}
+                      </div>
+                    )}
                     <a
                       href={branch.mapsUrl}
                       target="_blank"
