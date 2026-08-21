@@ -7,10 +7,10 @@ import HistoriaHero from "@/components/HistoriaHero";
 
 export const metadata: Metadata = {
   title: "Historia | JL Samuray BJJ Academy",
-  description: "El camino del guerrero: más de 50 años de trayectoria marcial del Prof. Jorge Omar Ledesma, fundador de la JL Samuray BJJ Academy.",
+  description: "El camino del guerrero: más de 50 años de trayectoria marcial del Mestre Jorge Omar Ledesma, fundador de la JL Samuray BJJ Academy.",
   openGraph: {
     title: "Historia | JL Samuray BJJ Academy",
-    description: "El camino del guerrero: más de 50 años de trayectoria marcial del Prof. Jorge Omar Ledesma.",
+    description: "El camino del guerrero: más de 50 años de trayectoria marcial del Mestre Jorge Omar Ledesma.",
     type: "website",
     locale: "es_AR",
     url: "https://samuraybjj.com/historia",

@@ -119,7 +119,7 @@ export default function PromesaTatami() {
             textTransform: "uppercase",
             fontWeight: 600,
           }}>
-            Prof. Jorge Omar Ledesma
+            Mestre Jorge Omar Ledesma
           </cite>
         </div>
       </div>

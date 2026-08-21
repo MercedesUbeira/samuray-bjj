@@ -40,7 +40,7 @@ const BRANCHES = [
   {
     key: "central",
     name: "Central",
-    profesor: "Prof. Jorge Omar Ledesma",
+    profesor: "Mestre Jorge Omar Ledesma",
     address: "Av. Rivadavia 5040",
     neighborhood: "Caballito",
     mapsUrl: "https://maps.google.com/?q=Av.+Rivadavia+5040,+Caballito,+Buenos+Aires",
