@@ -98,6 +98,12 @@ export default function Navbar() {
         {/* Logo */}
         <Link
           href="/"
+          onClick={(e) => {
+            if (isHome) {
+              e.preventDefault();
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }
+          }}
           style={{ background: "none", border: "none", cursor: "pointer", display: "flex", alignItems: "center", gap: "0.625rem", textDecoration: "none" }}
         >
           <Image
